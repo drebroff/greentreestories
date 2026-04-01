@@ -6,9 +6,9 @@
     display: inline-block;
     vertical-align: middle;
 }
-.hero-gradient {
-    background: linear-gradient(135deg, #000000 0%, #131b2e 100%);
-}
+/*.hero-gradient {*/
+/*    background: linear-gradient(135deg, #000000 0%, #131b2e 100%);*/
+/*}*/
 .glass-nav {
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);

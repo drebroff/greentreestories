@@ -1,4 +1,35 @@
+import { useEffect, useState } from "react";
+
 function Home() {
+    const [textData, setTextData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
+
+    useEffect(() => {
+        const loadTextData = async () => {
+            try {
+                const response = await fetch(
+                    "https://69cd04efddc3cabb7bd1ee9e.mockapi.io/api/v1/Text"
+                );
+
+                if (!response.ok) {
+                    throw new Error(`Request failed with status ${response.status}`);
+                }
+
+                const data = await response.json();
+                setTextData(data);
+            } catch (err) {
+                setError(err.message || "Failed to load data");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        loadTextData();
+    }, []);
+    useEffect(() => {
+        console.log("textData changed:", textData[0]?.Catchphrase);
+    }, [textData]);
   return (
     <div>
       <section className="relative min-h-[870px] flex items-center overflow-hidden bg-surface-container-low">
@@ -17,7 +48,7 @@ function Home() {
                       We don't just fix systems; we design digital foundations. Our consultants build scalable, secure infrastructure tailored to the architectural integrity of your business goals.
                   </p>
                   <div className="flex flex-wrap gap-4 pt-4">
-                      <button className="px-8 py-4 hero-gradient text-on-primary rounded-md font-headline font-bold flex items-center gap-2 shadow-xl shadow-primary-container/20">
+                      <button className="px-8 py-4 bg-primary-container text-on-primary rounded-md font-headline font-bold flex items-center gap-2 shadow-xl shadow-primary-container/20">
                           Partner With Us
                           <span className="material-symbols-outlined">arrow_forward</span>
                       </button>
@@ -28,7 +59,7 @@ function Home() {
               </div>
               <div className="md:col-span-5 relative hidden md:block">
                   <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative group">
-                      <img alt="Modern corporate skyscraper architecture" className="w-full h-full object-cover grayscale brightness-75 transition-transform duration-700 group-hover:scale-105" data-alt="Monochromatic modern glass architectural skyscraper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRnDmK3_-JHr3PQJvX-xZc6XqZQKhON3D8z9iKQs0GLca5NE6PS4s_Rwaf_4FAJwboOXoLpFODV01pPSIz0L1RTpg_dJ8VWTY4smxJ1QmrylKaZUVdzfz5eSdEX0h37Kky9k3D5p0ZH4zCwcnJlSc6BraxVZxmjxIejjV1xN2sTTvy84Ht69WGbyyUvyqYjui1KZmFzOeAlOUtpGWBoY3QxrWLkYvLpkGzFoCFtKm6Xli_mtRtbAJ0oi-o-QhRG0kACUI-moHLkuM6"/>
+                      <img alt="Green tree lithuania" className="w-full h-full object-cover brightness-100 transition-transform duration-700 group-hover:scale-105" data-alt="Monochromatic modern glass architectural skyscraper" src="https://images.pexels.com/photos/6025818/pexels-photo-6025818.jpeg"/>
                       <div className="absolute inset-0 bg-primary-container/20 mix-blend-multiply"></div>
                       <div className="absolute bottom-6 left-6 right-6 p-6 glass-nav bg-white/10 rounded-lg border border-white/20">
                           <div className="flex items-center justify-between">
@@ -64,7 +95,7 @@ function Home() {
                 <div className="relative z-10">
                     <span className="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="cloud">cloud</span>
                     <h3 className="font-headline text-3xl font-bold mb-4">Cloud Infrastructure</h3>
-                    <p className="text-on-surface-variant max-w-md">Scalable cloud architectures that breathe with your business. We migrate, optimize, and manage multi-cloud environments with surgical precision.</p>
+                    <p className="text-on-surface-variant max-w-md"></p>
                 </div>
                 <div className="mt-8 relative z-10">
                     <div className="flex gap-2">
@@ -80,7 +111,7 @@ function Home() {
                 <div>
                     <span className="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-8" data-icon="shield">shield</span>
                     <h3 className="font-headline text-2xl font-bold mb-4">Fortified Security</h3>
-                    <p className="text-on-primary-container leading-relaxed">Zero-trust architecture designed to protect your most valuable IP against evolving global threats.</p>
+                    <p className="text-on-primary-container leading-relaxed">{textData[0]?.Catchphrase || "Loading..."}</p>
                 </div>
                 <button className="w-full py-4 bg-surface-container-lowest/10 border border-white/20 rounded-md font-headline font-bold text-sm hover:bg-white/10 transition-colors">
                     Security Audit
