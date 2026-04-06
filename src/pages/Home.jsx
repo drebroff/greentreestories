@@ -82,13 +82,13 @@ function Home() {
     <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="mb-16 md:flex justify-between items-end">
             <div className="max-w-2xl">
-                <h2 className="font-headline text-4xl font-extrabold tracking-tight text-primary mb-6">Core Consulting Disciplines</h2>
-                <p className="text-on-surface-variant leading-relaxed">Systemic excellence requires more than software. We focus on the structural integrity of your digital assets through three primary pillars.</p>
+                <h2 className="font-headline text-4xl font-extrabold tracking-tight text-primary mb-6">{textData[0]?.["consulting-disciplines"]?.[0]?.title} </h2>
+                <p className="text-on-surface-variant leading-relaxed">{textData[0]?.["consulting-disciplines"]?.[0]?.description}</p>
             </div>
             <div className="mt-6 md:mt-0">
                 <a className="text-on-tertiary-container font-headline font-bold flex items-center gap-2 group" href="#">
-                    Explore Full Catalog
-                    <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_right_alt</span>
+                    {textData[0]?.["consulting-disciplines"]?.[0]?.link.label}
+                    <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">→</span>
                     <div className="h-[2px] bg-on-tertiary-container/30 absolute bottom-0 left-0 w-full group-hover:bg-on-tertiary-container transition-all"></div>
                 </a>
             </div>
@@ -97,15 +97,15 @@ function Home() {
             {/* Cloud Service */}
             <div className="md:col-span-8 bg-surface-container-high rounded-xl p-10 flex flex-col justify-between min-h-[400px] relative overflow-hidden group">
                 <div className="relative z-10">
-                    <span className="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="cloud">cloud</span>
-                    <h3 className="font-headline text-3xl font-bold mb-4">Cloud Infrastructure</h3>
+                    <span className="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="cloud">{textData[0]?.["consulting-disciplines"]?.[0]?.services[0].key}</span>
+                    <h3 className="font-headline text-3xl font-bold mb-4">{textData[0]?.["consulting-disciplines"]?.[0]?.services[0].title}</h3>
                     <p className="text-on-surface-variant max-w-md"></p>
                 </div>
                 <div className="mt-8 relative z-10">
                     <div className="flex gap-2">
-                        <span className="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-on-secondary-container">AWS</span>
-                        <span className="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-on-secondary-container">Azure</span>
-                        <span className="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-on-secondary-container">Hybrid</span>
+                        <span className="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-on-secondary-container">{textData[0]?.["consulting-disciplines"]?.[0]?.services[0].tags[0]}</span>
+                        <span className="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-on-secondary-container">{textData[0]?.["consulting-disciplines"]?.[0]?.services[0].tags[1]}</span>
+                        <span className="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-on-secondary-container">{textData[0]?.["consulting-disciplines"]?.[0]?.services[0].tags[2]}</span>
                     </div>
                 </div>
                 <img alt="Abstract digital cloud networking" className="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-10 grayscale group-hover:opacity-20 transition-opacity" data-alt="Blue and white digital fiber optic network lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDexG36Stp9clBXVA89TwY0MWVjSndiItP16ypA4-K7cLrtvuH9O8-vSNbIOu2gcn7C2LO4aOWPO3md7P7xfWCfH5Omtz0YJyp2JiKRopbA5-G4cFM-xK2rn4pecaU63jkdD2m-d41OCah1pEoFHNtuQv345Ub8UPdKtz9enw5ogpmiPmXD3srFKJu5WSoj1OwO5Qrh2U0ycDZD7ITJrTYW8DaqBBzvPIvq1kjiQ8H6w23hr-5kXi2i7XV2DBDNYXlyHXRHVXz7tQ3e"/>
@@ -113,36 +113,36 @@ function Home() {
             {/* Security Service */}
             <div className="md:col-span-4 bg-primary-container text-on-primary rounded-xl p-10 flex flex-col justify-between min-h-[400px]">
                 <div>
-                    <span className="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-8" data-icon="shield">shield</span>
-                    <h3 className="font-headline text-2xl font-bold mb-4">Fortified Security</h3>
-                    <p className="text-on-primary-container leading-relaxed">Some shit</p>
+                    <span className="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-8" data-icon="shield">{textData[0]?.["consulting-disciplines"]?.[0]?.services[1].key}</span>
+                    <h3 className="font-headline text-2xl font-bold mb-4">{textData[0]?.["consulting-disciplines"]?.[0]?.services[1].title}</h3>
+                    <p className="text-on-primary-container leading-relaxed">{textData[0]?.["consulting-disciplines"]?.[0]?.services[1].description}</p>
                 </div>
                 <button className="w-full py-4 bg-surface-container-lowest/10 border border-white/20 rounded-md font-headline font-bold text-sm hover:bg-white/10 transition-colors">
-                    Security Audit
+                    {textData[0]?.["consulting-disciplines"]?.[0]?.services[1].buttonLabel}
                 </button>
             </div>
             {/* Networking Service */}
             <div className="md:col-span-4 bg-white shadow-xl shadow-slate-200/50 rounded-xl p-10 flex flex-col justify-between min-h-[400px]">
                 <div>
-                    <span className="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="settings_ethernet">settings_ethernet</span>
-                    <h3 className="font-headline text-2xl font-bold mb-4">Enterprise Networking</h3>
-                    <p className="text-on-surface-variant">Low-latency, high-availability networks that serve as the nervous system for global operations.</p>
+                    <span className="material-symbols-outlined text-4xl text-primary-container mb-8" data-icon="settings_ethernet">{textData[0]?.["consulting-disciplines"]?.[2]?.services[1].key}</span>
+                    <h3 className="font-headline text-2xl font-bold mb-4">{textData[0]?.["consulting-disciplines"]?.[0]?.services[2].title}</h3>
+                    <p className="text-on-surface-variant">{textData[0]?.["consulting-disciplines"]?.[0]?.services[2].description}</p>
                 </div>
                 <div className="space-y-4">
                     <div className="h-1 bg-surface-container rounded-full overflow-hidden">
                         <div className="h-full bg-tertiary-fixed-dim w-[85%]"></div>
                     </div>
                     <div className="flex justify-between text-xs font-label font-bold text-on-surface-variant">
-                        <span>NETWORK LOAD</span>
-                        <span>OPTIMIZED</span>
+                        <span>{textData[0]?.["consulting-disciplines"]?.[0]?.services[2].footer[0]}</span>
+                        <span>{textData[0]?.["consulting-disciplines"]?.[0]?.services[2].footer[1]}</span>
                     </div>
                 </div>
             </div>
             {/* Data Visualization/KPI Service */}
             <div className="md:col-span-8 bg-surface-dim rounded-xl p-10 flex items-center justify-between overflow-hidden">
                 <div className="max-w-xs">
-                    <h3 className="font-headline text-2xl font-bold mb-4">Performance Metrics</h3>
-                    <p className="text-on-surface-variant text-sm">Real-time infrastructure monitoring and predictive analytics to prevent downtime before it happens.</p>
+                    <h3 className="font-headline text-2xl font-bold mb-4">{textData[0]?.["consulting-disciplines"]?.[0]?.services[3].title}</h3>
+                    <p className="text-on-surface-variant text-sm">{textData[0]?.["consulting-disciplines"]?.[0]?.services[3].description}</p>
                 </div>
                 <div className="flex gap-6 items-end">
                     <div className="w-12 bg-primary-container h-32 rounded-t-sm"></div>
