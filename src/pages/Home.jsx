@@ -158,27 +158,27 @@ function Home() {
     <section className="py-24 bg-surface">
         <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">
-                <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">The Consultant's Impact</h2>
-                <p className="text-on-surface-variant">Trusted by CTOs from the world's most innovative engineering firms.</p>
+                <h2 className="font-headline text-4xl font-extrabold text-primary mb-4">{textData[0]?.testimonials?.[0]?.title}</h2>
+                <p className="text-on-surface-variant">{textData[0]?.testimonials?.[0]?.description}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Testimonial 1 */}
                 <div className="p-8 rounded-lg bg-surface-container-low border-l-4 border-tertiary-fixed-dim">
                     <div className="mb-6 flex text-tertiary-fixed-dim">
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
                     </div>
-                    <p className="italic text-on-surface mb-8 leading-relaxed">"TechArch restructured our entire server cluster. The ROI was visible within the first quarter due to zero downtime during peak loads."</p>
+                    <p className="italic text-on-surface mb-8 leading-relaxed">"{textData[0]?.testimonials?.[0]?.items[0].quote}."</p>
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-full bg-blue-100 overflow-hidden">
                             <img alt="Marcus Chen portrait" className="w-full h-full object-cover" data-alt="Professional headshot of a male executive" src={homerImage}/>
                         </div>
                         <div>
-                            <div className="font-headline font-bold text-sm">Homer Simpson</div>
-                            <div className="text-xs text-on-surface-variant">Safety Inspector, Springfield Nuclear Power Plant </div>
+                            <div className="font-headline font-bold text-sm">{textData[0]?.testimonials?.[0]?.items[0].name}n</div>
+                            <div className="text-xs text-on-surface-variant">{textData[0]?.testimonials?.[0]?.items[0].role} </div>
                         </div>
                     </div>
                 </div>
@@ -191,14 +191,14 @@ function Home() {
                         <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
                         <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
                     </div>
-                    <p className="italic text-on-surface mb-8 leading-relaxed">"Their security audit was terrifyingly thorough. We've never felt more protected. They treat our data as if it were their own."</p>
+                    <p className="italic text-on-surface mb-8 leading-relaxed">{textData[0]?.testimonials?.[0]?.items[1].quote}</p>
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-full bg-blue-100 overflow-hidden">
                             <img alt="Hello Kitty portrait" className="w-full h-full object-cover" data-alt="Professional headshot of a cat" src={helloKittyImage}/>
                         </div>
                         <div>
-                            <div className="font-headline font-bold text-sm">Kitty White</div>
-                            <div className="text-xs text-on-surface-variant">Art Director, Sanrio Company, Ltd.</div>
+                            <div className="font-headline font-bold text-sm">{textData[0]?.testimonials?.[0]?.items[1].name}</div>
+                            <div className="text-xs text-on-surface-variant">{textData[0]?.testimonials?.[0]?.items[1].role}</div>
                         </div>
                     </div>
                 </div>
@@ -211,14 +211,14 @@ function Home() {
                         <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
                         <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
                     </div>
-                    <p className="italic text-on-surface mb-8 leading-relaxed">"Architectural excellence is the only way to describe their networking approach. Truly the digital blueprint specialists."</p>
+                    <p className="italic text-on-surface mb-8 leading-relaxed">{textData[0]?.testimonials?.[0]?.items[2].quote}</p>
                     <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-full bg-blue-100 overflow-hidden">
                             <img alt="David Okoro portrait" className="w-full h-full object-cover" data-alt="Professional headshot of a plumber" src={marioImage}/>
                         </div>
                         <div>
-                            <div className="font-headline font-bold text-sm">Mario Mario</div>
-                            <div className="text-xs text-on-surface-variant">Self employed, Plumber</div>
+                            <div className="font-headline font-bold text-sm">{textData[0]?.testimonials?.[0]?.items[2].name}</div>
+                            <div className="text-xs text-on-surface-variant">{textData[0]?.testimonials?.[0]?.items[2].role}</div>
                         </div>
                     </div>
                 </div>
@@ -229,11 +229,11 @@ function Home() {
     <section className="max-w-7xl mx-auto px-6 mb-24">
         <div className="hero-gradient rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
             <div className="relative z-10 max-w-2xl mx-auto">
-                <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tighter">Ready to Build Your Digital Legacy?</h2>
-                <p className="text-white/70 text-lg mb-12">Start your technical consultation today and discover the architectural possibilities of your infrastructure.</p>
+                <h2 className="font-headline text-4xl md:text-5xl font-extrabold text-green-900 tracking-tighter">{textData[0]?.cta?.[0]?.title}</h2>
+                <p className="text-green-800 text-lg mb-12">{textData[0]?.cta?.[0]?.description}</p>
                 <div className="flex flex-col md:flex-row justify-center gap-4">
-                    <button className="bg-tertiary-fixed-dim text-primary-container px-10 py-4 rounded-md font-headline font-extrabold">Schedule Discovery Call</button>
-                    <button className="bg-white/10 text-white border border-white/20 px-10 py-4 rounded-md font-headline font-extrabold backdrop-blur-sm">View Case Studies</button>
+                    <button className="bg-on-tertiary-container text-green-500 px-10 py-4 rounded-md font-headline font-extrabold">{textData[0]?.cta?.[0]?.buttons[0].label}</button>
+                    <button className="bg-rose-300 text-green border border-white/20 px-10 py-4 rounded-md font-headline font-extrabold backdrop-blur-sm">{textData[0]?.cta?.[0]?.buttons[1].label}</button>
                 </div>
             </div>
             {/* Abstract Texture */}
