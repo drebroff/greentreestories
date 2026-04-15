@@ -42,8 +42,8 @@ function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center text-slate-500">
-        <p>© 2024 TechArch Consult. Architectural IT Solutions.</p>
-        <p className="mt-4 md:mt-0">Headquarters: London, UK</p>
+        <p>© 2026 Green Tree Stories. <br /> Crafted IT Solutions.</p>
+        <p className="mt-4 md:mt-0">Headquarters: Klaipėda, Lithuania</p>
       </div>
     </footer>
   );

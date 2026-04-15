@@ -165,11 +165,21 @@ function Home() {
                 {/* Testimonial 1 */}
                 <div className="p-8 rounded-lg bg-surface-container-low border-l-4 border-tertiary-fixed-dim">
                     <div className="mb-6 flex text-tertiary-fixed-dim">
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>*</span>
+                       <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
                     </div>
                     <p className="italic text-on-surface mb-8 leading-relaxed">"{textData[0]?.testimonials?.[0]?.items[0].quote}."</p>
                     <div className="flex items-center gap-4">
@@ -185,11 +195,21 @@ function Home() {
                 {/* Testimonial 2 */}
                 <div className="p-8 rounded-lg bg-surface-container-low border-l-4 border-primary-container">
                     <div className="mb-6 flex text-tertiary-fixed-dim">
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
                     </div>
                     <p className="italic text-on-surface mb-8 leading-relaxed">{textData[0]?.testimonials?.[0]?.items[1].quote}</p>
                     <div className="flex items-center gap-4">
@@ -205,11 +225,21 @@ function Home() {
                 {/* Testimonial 3 */}
                 <div className="p-8 rounded-lg bg-surface-container-low border-l-4 border-tertiary-fixed-dim">
                     <div className="mb-6 flex text-tertiary-fixed-dim">
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
-                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>star</span>
+                       <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
+                        <span className="material-symbols-outlined" style={{fontVariationSettings: "'FILL' 1"}}>
+                            ⭐
+                        </span>
                     </div>
                     <p className="italic text-on-surface mb-8 leading-relaxed">{textData[0]?.testimonials?.[0]?.items[2].quote}</p>
                     <div className="flex items-center gap-4">
