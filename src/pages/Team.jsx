@@ -1,4 +1,8 @@
 import React from 'react';
+import artMuseumImg from '../assets/team/art_museum_1x1.jpg';
+import catImg from '../assets/team/cat_1x1.jpg';
+import olgaImg from '../assets/team/Olga_1x1.jpg';
+import publicImg from '../assets/team/public_1x1.jpg';
 
 function Team() {
   return (
@@ -29,23 +33,23 @@ function Team() {
                 alt="David Thorne" 
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
                 data-alt="Professional portrait of a male senior technology consultant" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-dH2H7A59INwYaEt0JHZJuPUhamoGGsgVCQm65Kgj15h_E3KCjwR5BMNRHGv_s28GpWfcZAaPyUGcBnD7T7DazvWc3K5smvSol_5Jk0X7Z6NGDD4LnaR9vtAnBT5sQ8hBHDoKZPerIplFb4yFRJyesKQxjmtDGGknF__bCaVtMJJSGubc4jzYKSo1QhLnjNiiuXPOhuCmqTG4IpTf9661Ct8rLJPTNiyM4zHc-Qa_h_X4dA3DmB6McV-AjNF2IykAa4vNriJcVkjb" 
+                src={artMuseumImg} 
               />
             </div>
             <div className="w-full md:w-1/2 flex flex-col justify-between">
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <span className="bg-secondary-container text-on-secondary-container text-[10px] font-bold tracking-widest px-2 py-1 rounded">LEADERSHIP</span>
-                  <span className="text-tertiary-fixed-dim material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>pulse_alert</span>
+                  <span className="text-tertiary-fixed-dim material-symbols-outlined text-sm" style={{fontVariationSettings: "'FILL' 1"}}>📄</span>
                 </div>
-                <h2 className="text-3xl font-headline font-bold text-primary-container mb-2">David Thorne</h2>
-                <p className="text-on-tertiary-fixed-variant font-label text-sm font-semibold mb-6">Principal Infrastructure Architect</p>
+                <h2 className="text-3xl font-headline font-bold text-primary-container mb-2">Dmitrij Rebrov</h2>
+                <p className="text-on-tertiary-fixed-variant font-label text-sm font-semibold mb-6">Principal Software</p>
                 <p className="text-on-surface-variant leading-relaxed mb-8">
-                  With over 20 years in enterprise architecture, David specializes in translating complex business objectives into scalable cloud-native infrastructure.
+                  With over 15 years in fintech business, Dmitrij specializes in translating complex software objectives into scalable production-ready solutions.
                 </p>
               </div>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-surface-container text-on-primary-fixed-variant text-xs px-3 py-1.5 rounded-full">Cloud Strategy</span>
+                <span className="bg-surface-container text-on-primary-fixed-variant text-xs px-3 py-1.5 rounded-full">Drupal Development</span>
                 <span className="bg-surface-container text-on-primary-fixed-variant text-xs px-3 py-1.5 rounded-full">Legacy Migration</span>
               </div>
             </div>
@@ -59,18 +63,18 @@ function Team() {
                   alt="Elena Rodriguez" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
                   data-alt="Portrait of a female cybersecurity expert" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3_9oMe4sLwxDrA3wJbkth5RIlfSAgb5zO3o1TOaB0l1TE2kJLsG46kcoWfuWxr9udb-cI7yD-nrIg1zVHQx9Jfu1Q2rW7pOxdcn6NhqZ_ZtpGzAc0uDp_dZhNXi2XHCzguUUoIwI_0M3YVAWq-y7VGQTNM4sv6hkE5xyk3MHBd-wpJnc8pnAN2-9g60kAbFFINMWcAH0Bjct7v9EzLJJIR_XjLT_ZtObMt3l3ND5fCk2tN_KYOe6RsGJKj4cewfQYXkv544WnK0Ri" 
+                  src={catImg} 
                 />
               </div>
-              <h3 className="text-xl font-headline font-bold text-primary-container mb-1">Elena Rodriguez</h3>
-              <p className="text-on-tertiary-fixed-variant font-label text-xs font-semibold mb-4">Cybersecurity Specialist</p>
+              <h3 className="text-xl font-headline font-bold text-primary-container mb-1">Ekatirina Kotov</h3>
+              <p className="text-on-tertiary-fixed-variant font-label text-xs font-semibold mb-4">Office manager</p>
               <p className="text-sm text-on-surface-variant leading-relaxed">
-                Expert in threat modeling and zero-trust implementation for Fortune 500 financial institutions.
+                Expert in threat modeling and zero-trust implementation for homestead financial institutions.
               </p>
             </div>
             <div className="mt-8">
               <span className="text-on-tertiary-container text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all cursor-pointer">
-                VIEW PROFILE <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                VIEW PROFILE <span className="material-symbols-outlined text-sm">→</span>
               </span>
             </div>
           </div>
@@ -84,19 +88,19 @@ function Team() {
             <ul className="space-y-4 relative z-10">
               <li className="flex items-center gap-3 text-white/80 group">
                 <span className="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full group-hover:scale-150 transition-transform"></span>
-                <span className="font-label text-sm">Hybrid Cloud Management</span>
+                <span className="font-label text-sm">Drupal development Solutions</span>
               </li>
               <li className="flex items-center gap-3 text-white/80 group">
                 <span className="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full group-hover:scale-150 transition-transform"></span>
-                <span className="font-label text-sm">DevSecOps Automation</span>
+                <span className="font-label text-sm">Adobe Commerce Development Solutions</span>
               </li>
               <li className="flex items-center gap-3 text-white/80 group">
                 <span className="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full group-hover:scale-150 transition-transform"></span>
-                <span className="font-label text-sm">Data Governance & BI</span>
+                <span className="font-label text-sm">QA and tdd</span>
               </li>
               <li className="flex items-center gap-3 text-white/80 group">
                 <span className="w-1.5 h-1.5 bg-tertiary-fixed-dim rounded-full group-hover:scale-150 transition-transform"></span>
-                <span className="font-label text-sm">Network Modernization</span>
+                <span className="font-label text-sm">Affiliate network development</span>
               </li>
             </ul>
           </div>
@@ -109,18 +113,18 @@ function Team() {
                   alt="Marcus Chen" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
                   data-alt="Portrait of a male data systems engineer" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcAzz-46NjyLcmah-oHmpy5ZS26jFwxL1Kay9SJOGDNv3oR2IpO9kRovxeWmJHb0CFTUL6-1W9VzaI0_p4WHlSXYUVlMM0Izhlvj2i_Czz5iI0jYdBeBKPayZYkM3Vfk0zxh27WBoJ4gE7d6IKzIFqnMjolht47Jw3o0x9xiK821x15_i-LhQVY2A5OH-ULoDHs3SKZQ3hdpdPy7psXbdTviy6G4CuPXuWaB85IglUW9YBK7tqEbUW251uw0OO-DmJSNq5xAOAtQBo" 
+                  src={olgaImg} 
                 />
               </div>
-              <h3 className="text-xl font-headline font-bold text-primary-container mb-1">Marcus Chen</h3>
-              <p className="text-on-tertiary-fixed-variant font-label text-xs font-semibold mb-4">Senior Data Systems Engineer</p>
+              <h3 className="text-xl font-headline font-bold text-primary-container mb-1">Olga Beliajeva</h3>
+              <p className="text-on-tertiary-fixed-variant font-label text-xs font-semibold mb-4">Senior QA specialist</p>
               <p className="text-sm text-on-surface-variant leading-relaxed">
-                Specializes in high-throughput data pipelines and real-time analytics infrastructure.
+                Specializes in high-throughput application testing and real-time quality analytics.
               </p>
             </div>
             <div className="mt-8">
               <span className="text-on-tertiary-container text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all cursor-pointer">
-                VIEW PROFILE <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                VIEW PROFILE <span className="material-symbols-outlined text-sm">→</span>
               </span>
             </div>
           </div>
@@ -133,18 +137,18 @@ function Team() {
                   alt="Sarah Jenkins" 
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" 
                   data-alt="Portrait of a female IT solutions architect" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnepDFsQNWfHm1C8_JJ8nvvUkvFYrDdUA6BxIlXY6n3U4lKvmEXERLUUHeNykYgeC5hSnewjj1tb5EM93iWqzlffQvb9AgQjYfr2_benD11CLFNDSC8k4wcfnlkUDhgXtgvcffmRyuQhN4s98KYULsr9A6XZCFlB5sdXaSxmLDkdE9qRctYYzaVQoTWKhCZHYiI-0q1BCWFGyAzc9ehW9dArvGQ-vthjpvVAhytyXJp9OqAcMfgWkgxHxxoPa6Bif17TJlcpGN2VZu" 
+                  src={publicImg} 
                 />
               </div>
-              <h3 className="text-xl font-headline font-bold text-primary-container mb-1">Sarah Jenkins</h3>
-              <p className="text-on-tertiary-fixed-variant font-label text-xs font-semibold mb-4">Solutions Architect</p>
+              <h3 className="text-xl font-headline font-bold text-primary-container mb-1">Natalja Grigorjeva</h3>
+              <p className="text-on-tertiary-fixed-variant font-label text-xs font-semibold mb-4">Public relations specialist</p>
               <p className="text-sm text-on-surface-variant leading-relaxed">
-                Designing resilient SaaS architectures and leading digital transformation roadmaps.
+                Designing resilient communication architectures and leading analog transformation roadmaps.
               </p>
             </div>
             <div className="mt-8">
               <span className="text-on-tertiary-container text-xs font-bold flex items-center gap-1 group-hover:gap-2 transition-all cursor-pointer">
-                VIEW PROFILE <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                VIEW PROFILE <span className="material-symbols-outlined text-sm">→</span>
               </span>
             </div>
           </div>
@@ -160,7 +164,7 @@ function Team() {
                 <span className="w-3 h-3 bg-tertiary-fixed-dim rounded-full animate-pulse"></span>
                 <span className="font-label text-xs font-bold text-on-primary-fixed-variant uppercase tracking-widest">Global Experience</span>
               </div>
-              <div className="text-5xl font-headline font-extrabold text-primary-container mb-2">150+</div>
+              <div className="text-5xl font-headline font-extrabold text-primary-container mb-2">110+</div>
               <p className="text-on-surface-variant text-sm">Successful enterprise-level deployments across 4 continents.</p>
             </div>
             <div>

@@ -118,9 +118,9 @@ function Contact() {
                 <div className="space-y-2">
                   <label className="text-sm font-semibold text-on-surface-variant">Service Interest</label>
                   <select className="w-full bg-surface-container-low border-none focus:ring-1 focus:ring-tertiary-fixed-dim rounded-md px-4 py-3 text-on-surface-variant" value={serviceInterest} onChange={(e) => setServiceInterest(e.target.value)}>
-                    <option>Cloud Infrastructure</option>
-                    <option>Cybersecurity Audit</option>
-                    <option>Enterprise Architecture</option>
+                    <option>Drupal Infrastructure</option>
+                    <option>Magento 2 Audit</option>
+                    <option>Powershell Scripts</option>
                     <option>Managed IT Services</option>
                   </select>
                 </div>
@@ -192,16 +192,51 @@ function Contact() {
             {/* Quick Links/Socials Card */}
             <div className="bg-surface-container-low p-8 rounded-xl border border-outline-variant/15">
               <h4 className="font-headline font-bold mb-4">Follow Technical Updates</h4>
-              <div className="flex gap-4">
-                <a className="w-10 h-10 rounded-md bg-white flex items-center justify-center hover:bg-tertiary-fixed-dim transition-colors shadow-sm" href="#">
-                  <span className="material-symbols-outlined text-primary-container">terminal</span>
-                </a>
-                <a className="w-10 h-10 rounded-md bg-white flex items-center justify-center hover:bg-tertiary-fixed-dim transition-colors shadow-sm" href="#">
-                  <span className="material-symbols-outlined text-primary-container">hub</span>
-                </a>
-                <a className="w-10 h-10 rounded-md bg-white flex items-center justify-center hover:bg-tertiary-fixed-dim transition-colors shadow-sm" href="#">
-                  <span className="material-symbols-outlined text-primary-container">code</span>
-                </a>
+              <div className="flex gap-4"><a
+                  className="w-10 h-10 rounded-md bg-white flex items-center justify-center hover:bg-tertiary-fixed-dim transition-colors shadow-sm group"
+                  href="https://www.linkedin.com/in/dmitrij-rebrov-0465378b/"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+              >
+                  <svg
+                      className="w-5 h-5 text-primary-container group-hover:text-white transition-colors"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                  >
+                      <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8.98H4.8V24H.22V8.98zM8.83 8.98h4.39v2.05h.06c.61-1.16 2.1-2.39 4.32-2.39 4.62 0 5.47 3.04 5.47 6.99V24h-4.58v-6.71c0-1.6-.03-3.66-2.23-3.66-2.23 0-2.57 1.74-2.57 3.54V24H8.83V8.98z" />
+                  </svg>
+              </a>
+                  <a
+                      className="w-10 h-10 rounded-md bg-white flex items-center justify-center hover:bg-tertiary-fixed-dim transition-colors shadow-sm group"
+                      href="https://github.com/drebroff"
+                      aria-label="GitHub"
+                      title="GitHub"
+                  >
+                      <svg
+                          className="w-5 h-5 text-primary-container group-hover:text-white transition-colors"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                      >
+                          <path d="M12 .5C5.73.5.9 5.47.9 11.82c0 5.08 3.29 9.38 7.86 10.89.58.11.79-.26.79-.57v-2.1c-3.2.71-3.88-1.37-3.88-1.37-.52-1.36-1.27-1.73-1.27-1.73-1.04-.73.08-.72.08-.72 1.15.08 1.76 1.19 1.76 1.19 1.02 1.78 2.68 1.26 3.34.96.1-.76.4-1.26.72-1.55-2.56-.3-5.25-1.32-5.25-5.88 0-1.3.46-2.36 1.22-3.19-.12-.3-.53-1.52.12-3.16 0 0 1-.33 3.28 1.22a11.1 11.1 0 0 1 5.97 0c2.28-1.55 3.28-1.22 3.28-1.22.65 1.64.24 2.86.12 3.16.76.83 1.22 1.89 1.22 3.19 0 4.57-2.69 5.58-5.26 5.87.41.36.77 1.08.77 2.18v3.23c0 .31.21.69.8.57 4.56-1.51 7.85-5.81 7.85-10.89C23.1 5.47 18.27.5 12 .5z" />
+                      </svg>
+                  </a>
+                  <a
+                      className="w-10 h-10 rounded-md bg-white flex items-center justify-center hover:bg-tertiary-fixed-dim transition-colors shadow-sm group"
+                      href="https://rekvizitai.vz.lt/en/company/majestic_solutions/"
+                      aria-label="Rekvezitai.lt"
+                      title="Rekvezitai.lt"
+                  >
+                      <svg
+                          className="w-5 h-5 text-primary-container group-hover:text-white transition-colors"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          aria-hidden="true"
+                      >
+                          <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm2 4v2h10V7H7zm0 4v2h10v-2H7zm0 4v2h6v-2H7z" />
+                      </svg>
+                  </a>
               </div>
             </div>
           </div>
