@@ -12,11 +12,11 @@ function Team() {
           <div className="md:col-span-7">
             <span className="text-on-tertiary-container font-label text-xs font-bold tracking-[0.2em] uppercase mb-4 block">Our Experts</span>
             <h1 className="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-primary leading-[1.1] mb-6">
-              Architecting the future of <span className="text-gradient-primary">digital enterprise.</span>
+              Architecting the future of <span className="text-gradient-primary">analog workflow.</span>
             </h1>
           </div>
           <div className="md:col-span-5 pb-2">
-            <p className="text-body-lg text-on-primary-container leading-relaxed border-l-2 border-tertiary-fixed-dim pl-6 py-2">
+            <p className="text-body-lg text-blue-900 leading-relaxed border-l-2 border-b-emerald-900 pl-6 py-2">
               We don't just solve tickets; we design robust technical foundations. Meet the architects behind our global IT consultation success.
             </p>
           </div>
